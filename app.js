@@ -3,6 +3,7 @@ var cors = require("cors");
 const router = require("./router/route");
 const app = express();
 app.use(express.json());
+// console.log("==============>",test)
 app.use(cors());
 app.use((req, res, next) => {
   res.append("Access-Control-Allow-Origin", ["*"]);
